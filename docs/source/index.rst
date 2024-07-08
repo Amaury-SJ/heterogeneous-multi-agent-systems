@@ -45,5 +45,3 @@ A cool bit of code::
    :maxdepth: 2
 
    install
-   support
-
