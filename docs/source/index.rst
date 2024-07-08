@@ -35,7 +35,7 @@ You can use ``backticks`` for showing ``highlighted`` code.
 .. _A cool website: http://sphinx-doc.org
 
 A cool bit of code::
-   Some cool Code
+    Some cool Code
 
 .. code-block:: rst
 
