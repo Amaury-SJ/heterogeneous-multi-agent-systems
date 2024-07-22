@@ -10,6 +10,10 @@
 :maxdepth: 2
 ```
 
+```{warning}
+This documentation is under heavy development and redaction.
+```
+
 # Indices and tables
 
 - {ref}`genindex`
