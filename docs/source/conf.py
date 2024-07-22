@@ -13,6 +13,7 @@ author = 'Amaury Saint-Jore'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
+# You must add extensions too in requirements.txt file for ReadTheDocs
 extensions = ["myst_parser",]
 
 templates_path = ['_templates']
