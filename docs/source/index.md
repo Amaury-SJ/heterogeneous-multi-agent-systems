@@ -22,14 +22,18 @@ This documentation is under heavy development and redaction.
 
 # Title
 
+Bonjour.
+
 ## Section
 
-hello here {doc}`install`.
-again one line {ref}`sect not bad`.
+Rebonjour.
 
 ### Subsection really cool
 
 You can use `backticks` for showing `highlighted` code.
+
+hello here {doc}`install`.
+again one line {ref}`sect not bad`.
 
 [A cool website]
 
