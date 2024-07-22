@@ -45,10 +45,13 @@ A cool bit of code::
 A bit of **rst** which should be *highlighted* properly.
 ```
 
+## Contents
+
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 
 install
+create_your_doc
 ```
 
 [a cool website]: http://sphinx-doc.org
