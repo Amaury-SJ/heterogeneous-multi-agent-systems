@@ -14,7 +14,8 @@ author = 'Amaury Saint-Jore'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 # You must add extensions too in requirements.txt file for ReadTheDocs
-extensions = ["myst_parser",]
+extensions = ["myst_parser",
+              "sphinx.ext.autosectionlabel"]
 
 templates_path = ['_templates']
 exclude_patterns = []

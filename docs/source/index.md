@@ -24,6 +24,9 @@ This documentation is under heavy development and redaction.
 
 ## Section
 
+hello here {doc}`install`.
+again one line {ref}`sect not bad`.
+
 ### Subsection really cool
 
 You can use `backticks` for showing `highlighted` code.
