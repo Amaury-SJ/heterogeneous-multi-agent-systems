@@ -13,11 +13,19 @@ reStructuredText is the default plaintext markup language used by Sphinx. [Markd
 ## Tutorial
 
 From the official Read the Docs [tutorial], we'll first create a folder containing the proposed ReadTheDocs [template].
-We'll use Visual Studio Code to simplify various tasks. Let's create a virtual environment with Conda, for example, to create documentation and install the necessary packages. The `project/.conda` folder doesn't have to be in the same folder as the one containing our codes and documentation `project/codes_and_docs`. You can then select the interpreter in Visual Studio Code via the search bar by typing :
->python: Select Interpreter
+We'll use Visual Studio Code to simplify various tasks. Let's create a virtual environment with Conda, for example, to create documentation and install the necessary packages. The `project/.conda` folder doesn't have to be in the same folder as the one containing our codes and documentation `project/codes_and_docs`. You can then select the interpreter in Visual Studio Code via the search bar by typing: *>python: Select Interpreter*
 
-Translated with DeepL.com (free version)
+You can install the various dependencies noted in the pyproject.toml file, for documentation purposes, with:
 
+```shell
+pip install -e .[doc]
+```
+
+Or install Sphinx directly:
+
+```shell
+pip install sphinx
+```
 ## Other solutions
 
 There are other easy ways to create scientific documentation:

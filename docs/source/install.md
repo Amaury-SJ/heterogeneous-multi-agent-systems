@@ -9,7 +9,7 @@ easy_install crawler
 
 Or, if you have pip installed:
 
-```bash
+```shell
 pip install crawler
 ```
 ## sect not bad
