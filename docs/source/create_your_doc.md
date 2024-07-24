@@ -27,6 +27,15 @@ Or install Sphinx directly:
 pip install sphinx
 ```
 
+We can use another famous theme to create our documentation:
+```shell
+pip install sphinx_rtd_theme
+```
+
+To change the theme, in the source/conf.py file, we can set:
+```python
+html_theme = 'sphinx_rtd_theme'
+```
 
 When using new Python requirements, such as `sphinx_rtd_theme` and `myst_parser`, you need to add their names to the `docs/requirements.txt` file, so that when Read The Docs builds its documentation from `.readthedocs.yaml` in the online server, it can install the necessary dependencies.
 
