@@ -26,6 +26,10 @@ Or install Sphinx directly:
 ```shell
 pip install sphinx
 ```
+
+
+When using new Python requirements, such as `sphinx_rtd_theme` and `myst_parser`, you need to add their names to the `docs/requirements.txt` file, so that when Read The Docs builds its documentation from `.readthedocs.yaml` in the online server, it can install the necessary dependencies.
+
 ## Other solutions
 
 There are other easy ways to create scientific documentation:
