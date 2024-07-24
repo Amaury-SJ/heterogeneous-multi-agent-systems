@@ -12,21 +12,6 @@ Or, if you have pip installed:
 ```shell
 pip install crawler
 ```
-## sect not bad
-
-### subsect not bad
-
-# Example Markdown
-
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
-
-
-## Horizontal Rules
-
 ___
 
 ---

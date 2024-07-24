@@ -13,7 +13,7 @@ reStructuredText is the default plaintext markup language used by Sphinx. [Markd
 ## Tutorial
 
 From the official Read the Docs [tutorial], we'll first create a folder containing the proposed ReadTheDocs [template].
-We'll use Visual Studio Code to simplify various tasks. Let's create a virtual environment with Conda, for example, to create documentation and install the necessary packages. The `project/.conda` folder doesn't have to be in the same folder as the one containing our codes and documentation `project/codes_and_docs`. You can then select the interpreter in Visual Studio Code via the search bar by typing: *>python: Select Interpreter*
+We'll use Visual Studio Code to simplify various tasks. Let's create a virtual environment with Conda, for example, to create documentation and install the necessary packages. The `project/.conda` folder doesn't have to be in the same folder as the one containing our codes and documentation `project/codes_and_docs`. You can then select the interpreter in Visual Studio Code via the search bar by typing *>python: Select Interpreter*
 
 You can install the various dependencies noted in the pyproject.toml file, for documentation purposes, with:
 
@@ -28,16 +28,20 @@ pip install sphinx
 ```
 
 We can use another famous theme to create our documentation:
+
 ```shell
 pip install sphinx_rtd_theme
 ```
 
-To change the theme, in the source/conf.py file, we can set:
+To change the theme, in the `source/conf.py` file, we can set:
+
 ```python
 html_theme = 'sphinx_rtd_theme'
 ```
 
+```{note}
 When using new Python requirements, such as `sphinx_rtd_theme` and `myst_parser`, you need to add their names to the `docs/requirements.txt` file, so that when Read The Docs builds its documentation from `.readthedocs.yaml` in the online server, it can install the necessary dependencies.
+```
 
 ## Other solutions
 
