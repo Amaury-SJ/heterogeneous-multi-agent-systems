@@ -50,6 +50,7 @@ A bit of **rst** which should be *highlighted* properly.
 ```{toctree}
 :maxdepth: 1
 
+index
 install
 create_your_doc
 ```
