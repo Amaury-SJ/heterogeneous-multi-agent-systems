@@ -12,15 +12,21 @@ reStructuredText is the default plaintext markup language used by Sphinx. [Markd
 
 ## Tutorial
 
+From the official Read the Docs [tutorial], we'll first create a folder containing the proposed ReadTheDocs [template].
+We'll use Visual Studio Code to simplify various tasks. Let's create a virtual environment with Conda, for example, to create documentation and install the necessary packages. The `project/.conda` folder doesn't have to be in the same folder as the one containing our codes and documentation `project/codes_and_docs`. You can then select the interpreter in Visual Studio Code via the search bar by typing :
+>python: Select Interpreter
 
+Translated with DeepL.com (free version)
 
 ## Other solutions
 
-Il existe d'autres solutions pour réaliser facilement sa documentation scientifique :
-- sur les plateformes GitHub et GitLab, il est possible de réaliser un section wiki directement dans son répertoire
-- des solutions en interne des universités françaises sont disponibles, comme la création d'un espace personnel Wiki, ou encore CompACT pour réaliser un portfolio électronique
+There are other easy ways to create scientific documentation:
+- on the GitHub and GitLab platforms, you can create a wiki section directly in your directory
+- solutions are available for members of French universities, such as the creation of a personal wiki space, or CompACT for creating an electronic portfolio
 
 [MyST]: https://mystmd.org/
 [Markdown]: https://www.markdownguide.org/
 [Sphinx]: https://sphinx-tutorial.readthedocs.io/
 [Read the Docs]: https://docs.readthedocs.io/en/stable/
+[tutorial]: https://docs.readthedocs.io/en/stable/tutorial/index.html
+[template]: https://github.com/readthedocs/tutorial-template/
