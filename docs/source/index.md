@@ -33,7 +33,6 @@ Rebonjour.
 You can use `backticks` for showing `highlighted` code.
 
 hello here {doc}`install`.
-again one line {ref}`sect not bad`.
 
 [A cool website]
 
@@ -50,7 +49,6 @@ A bit of **rst** which should be *highlighted* properly.
 ```{toctree}
 :maxdepth: 1
 
-index
 install
 create_your_doc
 ```

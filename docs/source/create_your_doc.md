@@ -70,7 +70,7 @@ When using new Python requirements, such as `sphinx_rtd_theme` and `myst_parser`
 
 ```{note}
 A la fin de ce tutoriel, l'arborescence du projet va ressembler à cela :
-```
+```yaml
 project
     .conda
     codes_and_documentation
