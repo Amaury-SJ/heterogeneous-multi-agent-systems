@@ -16,7 +16,7 @@ We can store our bibliography online on a specific server, to increase the size 
 - Then put in the URL address (https): `zotero-webdav.univ-lorraine.fr`.
 - Then the university identifier for the user name and password.
 
-![photoo](/docs/source/photos/zotero_tutorial.png "San Juan Mountains")
+![du texte](/photos/zotero_tutorial.png "Zotero tutorial")
 
 ## Tip n°2: 
 
