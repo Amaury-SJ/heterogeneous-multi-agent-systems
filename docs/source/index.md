@@ -5,22 +5,10 @@
 
 # Welcome to Heterogeneous multi-agent systems's documentation!
 
-```{toctree}
-:caption: 'Contents:'
-:maxdepth: 2
-```
-
 ```{warning}
 This documentation is under heavy development and redaction.
 ```
 
-# Indices and tables
-
-- {ref}`genindex`
-- {ref}`modindex`
-- {ref}`search`
-
-# Title
 
 Bonjour.
 
@@ -50,6 +38,7 @@ A bit of **rst** which should be *highlighted* properly.
 :maxdepth: 1
 
 install
+zotero
 create_your_doc
 ```
 

@@ -3,14 +3,16 @@
 This tutorial makes it easy to create scientific documentation for your project and publish it online, free of charge and open-source.
 The documentation for this site was created using Markdown, Sphinx and Read the Docs.
 
-## Tools used: Markdown, Sphinx and Read the Docs
+## Markdown, Sphinx and Read the Docs
+
+### Tools used
 
 To write the content of our documentation, we use [Sphinx], a free documentation generator. It supports reStructuredText or Markdown.
 reStructuredText is the default plaintext markup language used by Sphinx. [Markdown] is a lightweight markup language with a simplistic plain text formatting syntax. To use Markdown in Sphinx, we use the [MyST] community tool.
 
 [Read the Docs] allows you to generate and host your documentation automatically. Completely open source, there is an enterprise and a community version. The latter can host our site free of charge from public repositories such as GitHub or GitLab.
 
-## Tutorial
+### Tutorial
 
 From the official Read the Docs [tutorial], we'll first create a folder containing the proposed ReadTheDocs [template].
 We'll use Visual Studio Code to simplify various tasks. Let's create a virtual environment with Conda, for example, to create documentation and install the necessary packages. The `project/.conda` folder doesn't have to be in the same folder as the one containing our codes and documentation `project/codes_and_docs`. You can then select the interpreter in Visual Studio Code via the search bar by typing *>python: Select Interpreter*
@@ -64,12 +66,7 @@ extensions = ["myst_parser",
               "sphinx.ext.autosectionlabel"]
 ```
 
-```{note}
-When using new Python requirements, such as `sphinx_rtd_theme` and `myst_parser`, you need to add their names to the `docs/requirements.txt` file, so that when Read The Docs builds its documentation from `.readthedocs.yaml` in the online server, it can install the necessary dependencies.
-```
-
-```{note}
-A la fin de ce tutoriel, l'arborescence du projet va ressembler à cela :
+At the end of this tutorial, the project tree will look like this:
 ```yaml
 project
     .conda
@@ -92,8 +89,10 @@ project
                 ...
             build
                 ...
-
 ```
+
+```{note}
+When using new Python requirements, such as `sphinx_rtd_theme` and `myst_parser`, you need to add their names to the `docs/requirements.txt` file, so that when Read The Docs builds its documentation from `.readthedocs.yaml` in the online server, it can install the necessary dependencies.
 ```
 
 ## Other solutions
