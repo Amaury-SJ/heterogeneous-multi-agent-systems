@@ -7,29 +7,33 @@
 
 ```{warning}
 This documentation is under heavy development and redaction.
+
+Actually, much of this research is unpublished, so the content is hidden until the thesis is published and new research papers accepted.
 ```
 
+## Creating recipes
 
-Bonjour.
+To retrieve a list of random ingredients,
+you can use the ``lumache.get_random_ingredients()`` function:
 
-## Section
+```{eval-rst}
+.. autofunction:: lumache.get_random_ingredients
+```
 
-Rebonjour.
+This is a cross reference {py:func}`lumache.get_random_ingredients`
 
-### Subsection really cool
+The exception:
 
-You can use `backticks` for showing `highlighted` code.
+```{eval-rst}
+.. autoexception:: lumache.InvalidKindError
+```
 
-hello here {doc}`install`.
+```{eval-rst}
+.. autosummary::
+    :nosignatures:
 
-[A cool website]
-
-A cool bit of code::
-
-: Some cool Code
-
-```rst
-A bit of **rst** which should be *highlighted* properly.
+    myst_parser.sphinx_ext.main.setup_sphinx
+    myst_parser.sphinx_ext.main.create_myst_config
 ```
 
 ## Contents
@@ -37,9 +41,7 @@ A bit of **rst** which should be *highlighted* properly.
 ```{toctree}
 :maxdepth: 1
 
-install
+gps-rtk
 zotero
 create_your_doc
 ```
-
-[a cool website]: http://sphinx-doc.org
