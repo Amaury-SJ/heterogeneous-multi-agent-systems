@@ -12,6 +12,10 @@ reStructuredText is the default plaintext markup language used by Sphinx. [Markd
 
 [Read the Docs] allows you to generate and host your documentation automatically. Completely open source, there is an enterprise and a community version. The latter can host our static site free of charge from public repositories such as GitHub or GitLab.
 
+```{tip}
+For writing documentation, we use the official documentation of [MyST-parser](https://myst-parser.readthedocs.io/en/latest/syntax/typography.html) and [MyST](https://mystmd.org/guide/typography).
+```
+
 ### Tutorial
 
 From the official Read the Docs [tutorial], we'll first create a folder containing the proposed ReadTheDocs [template].
@@ -78,7 +82,7 @@ extensions = ["myst_parser",
 
 We're going to use the simple method with `sphinx.ext.autodoc`, even if it's not the first method [recommended](https://myst-parser.readthedocs.io/en/latest/syntax/code_and_apis.html#sphinx-autodoc2) by the MyST-parser documentation.
 
-We can add the extensions in `conf.py` (and don't forget to add the extensions to the `requirements.txt` file), with `autodoc` and also `autosummary` to summarize:
+We can add the extensions in `conf.py` (don't need to add the extensions to the `requirements.txt` file, because sphinx already installed), with `autodoc` and also `autosummary` to summarize:
 ```python
 extensions = ["myst_parser",
               "sphinx.ext.autosectionlabel",
@@ -125,7 +129,7 @@ project_name
             └── ...
 ```
 
-```{note}
+```{important}
 When using new Python requirements, such as `sphinx_rtd_theme` and `myst_parser`, you need to add their names to the `docs/requirements.txt` file, so that when Read The Docs builds its documentation from `.readthedocs.yaml` in the online server, it can install the necessary dependencies.
 ```
 

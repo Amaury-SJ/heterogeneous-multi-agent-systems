@@ -27,6 +27,7 @@ The exception:
 ```{eval-rst}
 .. autoexception:: lumache.InvalidKindError
 ```
+{kbd}`Ctrl` + {kbd}`Space`
 
 ```{eval-rst}
 .. autosummary::
