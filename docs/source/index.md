@@ -42,6 +42,9 @@ The exception:
 ```{toctree}
 :maxdepth: 1
 
+papers-articles-thesis-citations
+bag-data-ros2
+experiments-gps-board
 gps-rtk
 zotero
 create_your_doc
