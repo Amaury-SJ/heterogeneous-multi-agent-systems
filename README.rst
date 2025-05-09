@@ -15,6 +15,18 @@ You can find the full license text in the [LICENSE](./LICENSE) file.
 
 If you use this project, please make sure to cite it as described in the [CITATION.cff](./CITATION.cff) file.
 
+Citation
+========
+
+If you use this project in your research, please cite it as follows:
+
+.. code-block::
+
+   Your Name (2025). Project Name (Version 1.0.0) [Computer software]. 
+   Available at https://github.com/your-username/project-name
+
+For more information, see the `CITATION.cff <CITATION.cff>`_ file in the repository.
+
 License
 =======
 
