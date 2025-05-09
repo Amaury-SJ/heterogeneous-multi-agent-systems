@@ -20,4 +20,4 @@ License
 
 This project is licensed under the **GNU General Public License v3.0 or later (GPL-3.0-or-later)**.  
 You can freely use, modify, and distribute the code, subject to the terms of this license.  
-For more details, see the `LICENSE <./LICENSE>`_ file.
+For more details, see the `LICENSE file <LICENSE>`_.
