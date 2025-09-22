@@ -6,7 +6,7 @@
 # Welcome to Heterogeneous multi-agent systems's documentation!
 
 ```{warning}
-This documentation is under heavy development and redaction.
+**This documentation is currently empty and undergoing extensive development and drafting; the new version will be available on November 23rd.**
 
 Actually, much of this research is unpublished, so the content is hidden until the thesis is published and new research papers accepted.
 ```
