@@ -1,3 +1,5 @@
+**This documentation is currently empty and undergoing extensive development and drafting; the new version will be available on November 23rd.**
+
 Template for the Read the Docs tutorial
 =======================================
 
