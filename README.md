@@ -1,3 +1,10 @@
+
+[![Read the Docs](https://img.shields.io/readthedocs/hmas?logo=readthedocs&logoColor=8CA1AF)](https://hmas.readthedocs.io)
+[![HAL](https://img.shields.io/badge/HAL-reference-B03532?logo=HAL&logoColor=B03532)](https://hal.science/hal-04311426)
+[![ROS 2 Humble](https://img.shields.io/badge/ROS%202-Humble-22314E?logo=ros&logoColor=22314E)](https://docs.ros.org/en/humble/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-A42E2B.svg?logo=gnu&logoColor=A42E2B)](https://www.gnu.org/licenses/gpl-3.0)
+[![Cite](https://img.shields.io/badge/Cite-CFF-yellow?logo=academia)](./CITATION.cff)
+
 **This documentation is currently empty and undergoing extensive development and drafting; the new version will be available on November 23rd.**
 
 Template for the Read the Docs tutorial
