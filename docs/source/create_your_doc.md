@@ -153,7 +153,7 @@ autodoc2_packages = [
 ]
 ```
 
-Also, add the `autodoc2` extension to the `docs/requirements.txt` file, allowing Read the Docs to include the extension.
+Also, add the `sphinx-autodoc2` extension to the `docs/requirements.txt` file, allowing Read the Docs to include the extension.
 
 The specified folder name must be a package: it must contain an empty file `__init__.py`. By default, ROS 2 subpackage folders (e.g. `../../codes/src/my_first_pckg/my_first_pckg`) already contain this file. You need to add this empty file to launch folders, for example: `../../codes/src/my_first_pckg/launch`.
 

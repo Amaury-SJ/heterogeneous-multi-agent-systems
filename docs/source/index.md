@@ -5,11 +5,11 @@
 
 # Welcome to Heterogeneous Multi-Agent Systems's documentation!
 
-DESCRIPTIONN
+Documentation for the development of a Heterogeneous Multi-Agent System (HMAS), developed as part of a PhD thesis.
 
 The CITATION.cff file isn't update yet.
 
-Here is the GitHub link for this research project: [GitHub page]
+Here is the GitHub link for this research project: [github.com/Amaury-SJ/heterogeneous-multi-agent-systems]
 
 ## Summary and topics of this research project
 
