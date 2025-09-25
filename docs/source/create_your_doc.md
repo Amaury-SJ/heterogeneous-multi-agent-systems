@@ -153,6 +153,8 @@ autodoc2_packages = [
 ]
 ```
 
+Also, add the `autodoc2` extension to the `docs/requirements.txt` file, allowing Read the Docs to include the extension.
+
 The specified folder name must be a package: it must contain an empty file `__init__.py`. By default, ROS 2 subpackage folders (e.g. `../../codes/src/my_first_pckg/my_first_pckg`) already contain this file. You need to add this empty file to launch folders, for example: `../../codes/src/my_first_pckg/launch`.
 
 We also need to add the direction `apidocs/index` to the toctree of the `docs/source/index.md` file. This will generate an automatic `API Reference` page. The `make html` command will create a `docs/source/apidocs` folder containing an `index.rst` file and the documentation for the indicated packages. It is often necessary to repeat the `make html` command **twice or more**, as warnings appear when the apidocs is not fully generated.
