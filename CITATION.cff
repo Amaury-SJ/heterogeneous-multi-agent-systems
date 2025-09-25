@@ -1,11 +1,39 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below. TEST"
+message: >
+  If you use this software in your research, please cite it using one of the references below.
+title: "Nom du projet"
+version: "1.0.0"
 authors:
-- family-names: "TEST"
-  given-names: "Test"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
-title: "My Research Software TEST"
-version: 2.0.4
-doi: 10.1234/zenodo.1234
-date-released: 2017-12-18
-url: "https://github.com/Amaury-SJ/heterogeneous-multi-agent-systems"
+  - family-names: "Nom de famille"
+    given-names: "Prénom"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "Nom de l'université ou de l'institution"
+date-released: "2025-05-09"
+keywords:
+  - "logiciel scientifique"
+  - "recherche"
+  - "open source"
+license: "GPL-3.0-or-later"
+url: "https://github.com/utilisateur/nom-du-projet"
+references:
+  - type: journal-article
+    authors:
+      - family-names: "Auteur1"
+        given-names: "Prénom1"
+      - family-names: "Auteur2"
+        given-names: "Prénom2"
+    title: "Titre du premier article"
+    journal: "Nom du journal"
+    volume: "10"
+    issue: "2"
+    year: "2023"
+    doi: "10.xxxx/xxxxx1"
+
+  - type: thesis
+    authors:
+      - family-names: "Ton Nom de Famille"
+        given-names: "Ton Prénom"
+    title: "Titre de ta thèse"
+    year: "2025"
+    publisher: "Nom de l'université"
+    doi: "10.xxxx/xxxxx2"
