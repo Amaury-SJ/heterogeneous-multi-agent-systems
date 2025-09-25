@@ -18,7 +18,6 @@ extensions = ["myst_parser",
               "sphinx.ext.autosectionlabel",
               "sphinx.ext.autodoc",
               "sphinx.ext.autosummary",
-              "autodoc2",
               "sphinx-autodoc2",]
 
 templates_path = ['_templates']
