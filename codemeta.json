@@ -1,0 +1,33 @@
+{
+    "@context": "https://w3id.org/codemeta/3.0",
+    "type": "SoftwareSourceCode",
+    "applicationCategory": "Robotics",
+    "author": [
+        {
+            "id": "https://orcid.org/0009-0009-5292-8234",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "LORIA, CNRS, Université de Lorraine, Nancy, France"
+            },
+            "email": "amaury.saint-jore@loria.fr",
+            "familyName": "Saint-Jore",
+            "givenName": "Amaury"
+        }
+    ],
+    "codeRepository": "https://github.com/Amaury-SJ/heterogeneous-multi-agent-systems",
+    "dateCreated": "2025-09-25",
+    "description": "Codes and documentation for the development of a Heterogeneous Multi-Agent System (HMAS), developed as part of a PhD thesis.",
+    "keywords": [
+        "HMAS",
+        "Networked mobile robots",
+        "Cyber-Physical Systems",
+        "ROS 2 middleware",
+        "Indoor-Outdoor 3D Localization",
+        "Embedded Systems"
+    ],
+    "license": "https://spdx.org/licenses/GPL-3.0-or-later",
+    "name": "Heterogeneous Multi-Agent Systems",
+    "programmingLanguage": "Python",
+    "relatedLink": "https://hmas.readthedocs.io/"
+}

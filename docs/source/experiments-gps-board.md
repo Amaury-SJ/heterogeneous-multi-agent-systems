@@ -2,33 +2,53 @@
 
 This section details how to capture the data and reproduce the results obtained, as presented in the thesis of this research project. To consult the results of this section, we invite you to read our [published article](https://hal.science/hal-04311426), which can also be found in our list of published works in the section {doc}`papers-articles-thesis-citations`.
 
+A video illustrating the movement of the plate with the 4 GNSS receivers, to form a displacement representing a square, is available on this [**YouTube link**](https://youtu.be/b0Vw4D8oBn4).
+
 ```{warning}
-The tests were carried out in a preliminary phase of the project, so the format of the SatMsgRcv message provided by the gps_msg_pckg package is different. The old format should be recovered with the file `/////SatMsgRcv.msg`, then overwritten with the current format contained in our `gps_msg_pckg` package, which is the file `gps_msg_pckg/msg/SatMsgRcv.msg`. Remember to keep a copy of the overwritten format.
-If this procedure is not followed using the appropriate format, it will not be possible to read the topics.
+The tests were carried out in a preliminary phase of the project, so the format of the SatMsgRcv message provided by the `gps_msg_pckg` package is different. The old format should be recovered with the file that we provide `codes/bag_files/experiments_board_4_gps/SatMsgRcv.msg`, then overwritten with the current format contained in our `gps_msg_pckg` package, which is the file `gps_msg_pckg/msg/SatMsgRcv.msg`. Remember to keep a copy of the overwritten format. If this procedure is not followed using the appropriate format, it will **not be possible to read the topics**.
 ```
 
 ## Experimentation procedure
 
-Tous les codes sont contenus dont le package associé à ces expérimentations : `////`.
-Nous pouvons lancer les différentes parties, que ce soit l’acquisition des données des 4 GPS, le calcul des distances ou l’affichage en 3D, tout est configurable et exécutable via le fichier launch `///square4gps.launch.py` Le fichier est réglé par défaut pour ne faire que les calculs et l’affichage 3D via RViz2. Il faut donc lancer un bag file à part et rqt pour le tracer de courbe.
+All codes are contained in the package associated with these experiments: `codes/src/experiments_board_4_gps_pckg`. We can now launch the various parts of the program, from data acquisition from the 4 GPS units, to distance calculation and 3D display. Everything is configurable and executable via the launch file `experiments_board_4_gps_pckg/launch/square4gps.launch.py`. The file is set by default to perform only calculations and 3D display via RViz2. You therefore need to launch a separate bag file and RQt for curve plotting.
 
-La récupération des données des 4 GPS se fait à l’aide de nodes gps_talker du package `gps_rtk_pckg`. Et pour la partie visualisation 3D à l’aide de RViz, cela est fait grâce à notre package `display_rviz2_pckg`.
+Data retrieval from the 4 GPS units is carried out using `gps_talker` nodes from the `gps_rtk_pckg` package, used in our launch file. The node graph of recorded topics is illustrated below. And for 3D visualization using RViz, we use our `display_rviz2_pckg` package.
 
 ```{note}
-Il se peut que la map dans RViz2 ne s’affiche pas directement, car dans le fichier launch nous avons précisé que nous utilisons le GPS en bas à gauche pour calibrer la position de la map, et ce dernier doit être en solution fixe pour lancer l’affichage de la map.
+The map in RViz2 may not be displayed directly, after just a few seconds, because in the launch file we've specified that we're using the GPS in the bottom left corner to calibrate the map's position, and this must be in fixed solution to start displaying the map.
 ```
 
-Une fois qu’on a les différents topics contenant la position des récepteurs GNSS, on souhaite calculer les distance euclidienne 3D entre 2 antennes. Nous avons réalisé une node `calculate_distance_gps.py` permettant de subscribe à deux topics au choix et de publier ensuite un topic sur la distance obtenue.
+```{figure} /photos/experiments_board_4_gps/gps_talker_recorded.png
+:align: center
+:alt: experiments_gps_talekrs_recorded_rosgraph
+Node graph recording real-time data from 4 RTK GPS.
+```
 
-Voici le graph ROS 2 du système avec la partie tracé des courbes et affichage 3D sous RViz 2. (image)
+Once we have the various topics containing the position of GNSS receivers, we want to calculate the 3D Euclidean distance between 2 antennas. We've created a `calculate_distance_gps.py` node that allows you to subscribe to any two topics and then publish a topic based on the distance obtained.
+
+Here's the graph of the ROS 2 nodes in the system, enabling curves to be plotted and results to be displayed in 3D in RViz 2.
+
+```{figure} /photos/experiments_board_4_gps/experiments_board_4_gps_rosgraph.png 
+:align: center
+:alt: experiments_board_4_gps_rosgraph
+Node graph for replaying data, calculating distances and displaying in RViz2.
+```
 
 ## Registered bag files
 
 To find out how to save your data with ROS 2, we recommend that you first read the section on {doc}`bag-data-ros2`.
-Plusieurs expérimentations ont été menées, et chaque bag file correspond à une situation. Ils sont stockés dans le dossier `///`.
+Several experiments have been carried out, and each bag file corresponds to a situation. They are stored in the `codes/bag_files/experiments_board_4_gps` folder.
 
-- rosbag2_2022_11_08-17_11_34_sur_place
-- rosbag2_2022_11_08-17_14_57_sur_place_fix_avec_perturbation
-- rosbag2_2022_11_08-17_23_08_tourne_sur_place
-- rosbag2_2022_11_08-17_24_30_ligne_droite
-- rosbag2_2022_11_08-17_26_21_carre
+- `rosbag2_2022_11_08-17_11_34_no_motion` : board on the ground, no motion, no disruptions.
+- `rosbag2_2022_11_08-17_14_57_no_motion_with_disruptions` : board on the ground, no motion, with disruptions.
+- `rosbag2_2022_11_08-17_23_08_rotations` : move the board, turning in the two directions.
+- `rosbag2_2022_11_08-17_24_30_straight_line` : goes forward for several meters, tracing the first side of a square.
+- `rosbag2_2022_11_08-17_26_21_square` : moves to form the 3 sides of our square, over several meters.
+
+## Codes used
+
+We use the `calculate_dist_gps` node from the `experiments_board_4_gps_pckg` package:
+
+```{autodoc2-object} experiments_board_4_gps_pckg.calculate_distance_gps.CalculateDistGps
+render_plugin = "myst"
+```

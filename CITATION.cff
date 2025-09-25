@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below. TEST"
+authors:
+- family-names: "TEST"
+  given-names: "Test"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "My Research Software TEST"
+version: 2.0.4
+doi: 10.1234/zenodo.1234
+date-released: 2017-12-18
+url: "https://github.com/Amaury-SJ/heterogeneous-multi-agent-systems"

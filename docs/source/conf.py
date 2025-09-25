@@ -17,11 +17,23 @@ author = 'Amaury Saint-Jore'
 extensions = ["myst_parser",
               "sphinx.ext.autosectionlabel",
               "sphinx.ext.autodoc",
-              "sphinx.ext.autosummary"]
+              "sphinx.ext.autosummary",
+              "autodoc2",]
 
 templates_path = ['_templates']
 exclude_patterns = []
 
+
+autodoc2_packages = [
+    "../../codes/src/test2/test2",
+    "../../codes/src/experiments_board_4_gps_pckg/experiments_board_4_gps_pckg",
+    "../../codes/src/display_rviz2_pckg/display_rviz2_pckg",
+    "../../codes/src/display_rviz2_pckg/launch/display.launch.py",
+    "../../codes/src/gps_rtk_pckg/gps_rtk_pckg",
+
+]
+
+myst_enable_extensions = ["fieldlist"]
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

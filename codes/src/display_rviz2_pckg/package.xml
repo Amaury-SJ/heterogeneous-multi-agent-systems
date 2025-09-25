@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>display_rviz2_pckg</name>
+  <version>0.0.0</version>
+  <description>Data visualization in rviz2.</description>
+  <maintainer email="amausj@gmail.com">Amaury Saint-Jore</maintainer>
+  <license>TODO: License declaration</license>
+  
+  <depend>rclpy</depend>
+  <exec_depend>gps_msg_pckg</exec_depend>
+  <exec_depend>visualization_msgs.msg</exec_depend>
+  <exec_depend>geometry_msgs.msg</exec_depend>
+  <exec_depend>math</exec_depend>
+  <exec_depend>os</exec_depend>
+  <exec_depend>functools</exec_depend>
+  <exec_depend>geographiclib.geodesic</exec_depend>
+  <exec_depend>tf_transformations</exec_depend>
+  <!--<exec_depend>shutil</exec_depend>-->
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

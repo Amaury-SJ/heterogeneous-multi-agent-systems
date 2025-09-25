@@ -1,6 +1,6 @@
-# Use of an Emlid Reach GPS-RTK
+# Use of an Emlid Reach RTK GNSS
 
-Here's a collection of tips, best practices and tutorials for using Emlid Reach GPS-RTK. We use the RS+, M+ and M2 models, either as a base or as a rover.
+Here's a collection of tips, best practices and tutorials for using Emlid Reach RTK GNSS. We use the RS+, M+ and M2 models, either as a base or as a rover. The antennas can be single-band or multiband, and in particular the single-band model used here is a [Tallysman TW4721 antenna](https://www.calian.com/advanced-technologies/gnss_product/tw4721-single-band-gnss-antenna/).
 
 ## Get started and connection behaviors
 
@@ -38,13 +38,13 @@ For RS+ and M+, if you choose to receive the GLONASS and/or BEIDOU constellation
 
 Here are our recommended configurations, using an RS+ as a fixed base, and rovers with M+ and M2.
 
-```{figure} /photos/gps-rtk/fuse-gnss-settings.png
+```{figure} /photos/gps-rtk-parameters/fuse-gnss-settings.png
 :align: center
 :alt: RS+ M+ base gnss settings
 Emlid Reach RS+ in base mode and Emlid Reach M+ in rover mode.
 ```
 
-```{figure} /photos/gps-rtk/m2-gnss-settings.png
+```{figure} /photos/gps-rtk-parameters/m2-gnss-settings.png
 :scale: 30 %
 :align: center
 :alt: M2 rover gnss settings
@@ -62,7 +62,7 @@ We can also use NTRIP's internet service with bases located in the region, thank
 To use RTK2go, enter the address `rtk2go.com` with port `2101`, and leave username and password blank. You must, of course, enter the nearest mount point.
 ```
 
-```{figure} /photos/gps-rtk/correction-input.png
+```{figure} /photos/gps-rtk-parameters/correction-input.png
 :align: center
 :alt: Rover GPS RTK correction input
 Settings for a Rover receiving correction via LoRa on the left, and via NTRIP on the right.
@@ -72,7 +72,7 @@ Settings for a Rover receiving correction via LoRa on the left, and via NTRIP on
 
 This setting should of course be deactivated for GNSS receivers acting as rovers, preferably for the M+ and M2. We prefer to use the RS+ as a more practical base unit, with its battery and practical mountings.
 
-```{figure} /photos/gps-rtk/base-output.png
+```{figure} /photos/gps-rtk-parameters/base-output.png
 :scale: 30 %
 :align: center
 :alt: GPS RTK base output
@@ -83,7 +83,7 @@ Parameters for our RS+ base sending the correction via LoRa.
 
 We want to use an Emlid Reach RS+ receiver as a base. The size of the GPS between the bottom of the plastic protective case and the GNSS receiver located in the center of the case is already taken into account, which is 0.065 m for information.
 
-```{figure} /photos/gps-rtk/base-gnss-settings.png
+```{figure} /photos/gps-rtk-parameters/base-gnss-settings.png
 :scale: 30 %
 :align: center
 :alt: GPS RTK base settings
@@ -97,14 +97,14 @@ First of all, for the receiver acting as a base (the Reach RS+), there's no need
 We prefer **to collect all data on a single USB output**, directly wired to an on-board computer, to avoid data loss and limit the number of wifi connections in the HMAS system.
 We select GGA for latitude, longitude and altitude, RMC for speed and heading, and EBP to retrieve the base position. An example of the output format and justifications for the recovered data can be found in our research project thesis.
 
-```{figure} /photos/gps-rtk/position-streaming-usb.png
+```{figure} /photos/gps-rtk-parameters/position-streaming-usb.png
 :scale: 50 %
 :align: center
 :alt: GPS RTK position streaming usb
 Parameter in USB mode in NMEA format.
 ```
 
-```{figure} /photos/gps-rtk/position-streaming-wifi.png
+```{figure} /photos/gps-rtk-parameters/position-streaming-wifi.png
 :align: center
 :alt: GPS RTK position streaming wifi
 Parameter in Wi-Fi mode with the first output in NMEA format and the second in ENU format.
@@ -117,3 +117,13 @@ In the GST frame in NMEA format, the deviations observed are the same values (ca
 ### Bluetooth
 
 We recommend disabling Bluetooth to save battery power and power consumption.
+
+## Bad environmental conditions impacting GNSS reception
+
+In addition to problems connecting and starting RTK GPS, GNSS reception may not be sufficient, despite correct parameter settings. GNSS antennas need to be placed in a good environment, especially monoband antennas. However, it is still possible to achieve sufficient reception despite difficult conditions, and fairly good pre-precision even without a fixed solution. This is shown in the image below with two Emlid Reach M+, where sufficient accuracy is achieved despite poor reception, but the second RTK GPS is unable to calculate a solution. More details can be found in the thesis of this research project.
+
+```{figure} /photos/gps-rtk-parameters/old_firmware_interface_m+.png
+:align: center
+:alt: Old firmware interface M+
+Firmware interface for Emlid Reach M+, single-band RTK GPS. Two receivers are displayed in difficult conditions, the first with a calculated solution, but not for the second.
+```
