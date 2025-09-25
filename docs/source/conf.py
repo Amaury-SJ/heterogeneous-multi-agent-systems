@@ -18,7 +18,7 @@ extensions = ["myst_parser",
               "sphinx.ext.autosectionlabel",
               "sphinx.ext.autodoc",
               "sphinx.ext.autosummary",
-              "sphinx_autodoc2",]
+              "autodoc2",]
 
 templates_path = ['_templates']
 exclude_patterns = []
