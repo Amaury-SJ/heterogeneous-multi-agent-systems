@@ -6,11 +6,15 @@
 
 # Heterogeneous Multi Agent Systems
 
-Codes and documentation for the development of a Heterogeneous Multi-Agent System (HMAS), developed as part of a PhD thesis.
+Codes and documentation for a Heterogeneous Multi-Agent System (HMAS), developed as part of a PhD thesis.
 
 The project, key concepts, and source code are documented at the following link:
 
 [https://hmas.readthedocs.io/](https://hmas.readthedocs.io/)
+
+**Summary**: This project aims to design a generic, decentralized, and interoperable system via the ROS~2 middleware, enabling autonomous missions in complex real-world environments, with interaction and collaboration between robots and human operators. Two original approaches to real-time 3D localization are proposed: a RTK GNSS solution for outdoor use and the NAPS nomadic system for indoor use, both offering robust centimeter-level accuracy and suitable for multi-agent systems. A role-based trust model is also introduced to monitor agent behaviors, detect anomalies, and enhance system resilience. All these contributions, integrated into ROS~2, were tested on a real HMAS combining ground and aerial mobile robots.
+
+**Keywords**: Multi-Agent, Networked mobile robots, Cyber-Physical Systems, ROS 2 middleware, Indoor-Outdoor 3D Localization, Embedded Systems.
 
 ## Installation and get started
 
