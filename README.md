@@ -1,10 +1,9 @@
 [![Read the Docs](https://img.shields.io/readthedocs/hmas?logo=readthedocs&logoColor=8CA1AF)](https://hmas.readthedocs.io)
-[![HAL](https://img.shields.io/badge/HAL-reference-B03532?logo=HAL&logoColor=B03532)](https://hal.science/hal-04311426)
 [![ROS 2 Humble](https://img.shields.io/badge/ROS%202-Humble-22314E?logo=ros&logoColor=22314E)](https://docs.ros.org/en/humble/)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-A42E2B.svg?logo=gnu&logoColor=A42E2B)](https://www.gnu.org/licenses/gpl-3.0)
-[![Cite](https://img.shields.io/badge/Cite-CFF-yellow?logo=academia)](./CITATION.cff)
+[![HAL](https://img.shields.io/badge/HAL-reference-B03532?logo=HAL&logoColor=B03532)](https://hal.science/hal-04311426)
 [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/Amaury-SJ/heterogeneous-multi-agent-systems/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/Amaury-SJ/heterogeneous-multi-agent-systems)
-[![SWH](https://archive.softwareheritage.org/badge/swh:1:dir:ab2b76907e31ac42b384799df3c8c5c6742e61bd/)](https://archive.softwareheritage.org/swh:1:dir:ab2b76907e31ac42b384799df3c8c5c6742e61bd;origin=https://github.com/Amaury-SJ/heterogeneous-multi-agent-systems;visit=swh:1:snp:2feadf1d3e72f66a2fa7bc056cde7281f34bf60a;anchor=swh:1:rev:ec2948b9665d761611fa0b8f308cea38e86fcca3)
+[![Cite](https://img.shields.io/badge/Cite-CFF-yellow?logo=academia)](./CITATION.cff)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-A42E2B.svg?logo=gnu&logoColor=A42E2B)](https://www.gnu.org/licenses/gpl-3.0)
 
 # Heterogeneous Multi Agent Systems
 
